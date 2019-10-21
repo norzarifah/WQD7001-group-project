@@ -4,7 +4,6 @@ library(geojsonio)
 library(maps)
 library(mapdata)
 
-
 ### MISC FUNCTIONS ----
 #source("function1.R")
 #source("function2.R")
