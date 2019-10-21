@@ -1,0 +1,64 @@
+#### Objective: to create a dataframe of state, year, lat, long, accident_rate for map ------------
+
+## Load the required libraries ------------
+library(dplyr)
+library(tidyr)
+library(tabulizer)
+library(rvest)
+library(stringr)
+
+## Part 1: Extract accident_rate for each state ------------
+# extract table from pdf file:
+file <- "Buku+Statistik+Kemalangan+Jalan+Raya+Tahun+2018+(kemaskini+17.05.2019).pdf"
+df_tables <- extract_tables(file, output = "data.frame", header = TRUE)
+state <- df_tables[[15]]
+# clean data: remove first column:
+accident_state <- state[-c(1),]
+# clean data: reset row index:
+rownames(accident_state) <- NULL
+# clean data: combine separated rows:
+accident_state[5,] <- paste0(accident_state[5,], accident_state[6,], accident_state[7,])
+accident_state[11,] <- paste0(accident_state[11,], accident_state[12,], accident_state[13,])
+accident_state[19,] <- paste0(accident_state[19,], accident_state[20,], accident_state[21,])
+# clean data: remove unwanted rows:
+accident_state <- accident_state[-c(6, 7, 12, 13, 20, 21),]
+# clean data: reset row index:
+rownames(accident_state) <-  NULL 
+# clean data: rename columns:  
+colnames(accident_state) <- paste0("Y", 2007:2019)
+# clean data: remove the last row (as it is the sum of accident_rate for each state over the years):
+accident_state <- accident_state[-15,]
+# combine accident_state with States
+States <- c("Perlis", "Kedah", "Penang", "Perak", "Selangor", "WP.KualaLumpur", "Negeri Sembilan", "Melaka", "Johor", 
+            "Pahang", "Kelantan", "Terengganu", "Sabah", "Sarawak")
+state_clean <- cbind(States, accident_state)
+# convert accident_rate to numeric columns (remove "," first)
+state_clean[,-1] <- t(data.frame(apply(state_clean[,-1], 1, function(x) as.numeric(gsub(",", "", x)))))
+# view state_clean dataframe:
+state_clean
+
+## Part 2: web scraping to get lat long data for each state ------------
+url <- 'https://www.distancelatlong.com/country/malaysia'
+webpage <- read_html(url)
+state_table <- webpage %>% html_nodes('.table') %>% .[3] %>% html_table(fill = TRUE)
+state_table <- as.data.frame(state_table)
+state_table$States <- str_trim(str_replace(state_table$States, "\\(.*\\)", ""))
+capital_table <- webpage %>% html_nodes('.table') %>% .[5] %>% html_table(fill = TRUE)
+capital_table <- as.data.frame(capital_table)
+capital_table <- c(t(as.data.frame(capital_table$X2[c(2,6,7)])))
+state_loc <- rbind(state_table, capital)
+state_loc$States <- str_replace(state_loc$States, "Trengganu", "Terengganu")
+state_loc$Latitude <- as.numeric(state_loc$Latitude)
+state_loc$Longitude <-  as.numeric(state_loc$Longitude)
+
+## Part 3: merger state_clean and state_loc dataframes ------------
+data_merge <- merge(state_clean, state_loc, by="States")
+# gather Year columns into key:value pair of year:accident
+data_long <- gather(data, year, accident_rate, -c("States", "Latitude", "Longitude"))
+data_long$year <- as.numeric(str_replace(data_long$year, "\\Y", ""))
+data_long$accident_rate <- as.numeric(str_replace(data_long$accident_rate, "\\,", ""))
+str(data_long)
+
+
+
+
