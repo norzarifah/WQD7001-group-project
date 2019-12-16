@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Road Safety Suggestions</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+height: 120px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="1.html">Road Safety Suggestions</a></li>
+  <li><a href="2.html">Using lanes properly</a></li>
+</ul>
+
+<header>
+  <h2>Using lanes properly</h2>
+</header>
+
+<section>
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="https://www.wikihow.com/images/thumb/4/4d/Use-the-Center-Turning-Lane-Step-18-Version-3.jpg/aid203629-v4-728px-Use-the-Center-Turning-Lane-Step-18-Version-3.jpg" alt="Lane" width="1000" height="300">
+  </a>
+
+  <article>
+<div>Lane 1: The normal ‘keep left’ rule applies. Stay in this lane unless you are overtaking.
+</div>
+<div>Lane 2: On a two-lane motorway, use this for overtaking only and move back into Lane 1
+when you have finished. You may also use this lane to accommodate traffic merging
+from the left.
+</div>
+<div>Lane 3: On a three-lane motorway, you may stay in this centre lane while there is
+slower moving traffic in Lane 1. If you are travelling on a three-lane motorway, you must use this lane only
+if traffic in lanes 1 and 2 is moving in queues and you need to overtake or
+accommodate merging traffic. Once you’ve finished overtaking, mo
+</div>   
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

@@ -90,9 +90,11 @@ new_pop_mid <- gather(pop_mid, year, pop_mid, -c("country"))
 new_pop_density <- gather(pop_density, year, pop_density, -c("country", "total_area_sqkm", "rank_2017"))
 asean_data <- merge(new_pop_density, new_total_vehicle, by.x = c("country", "year"), by.y = c("country", "year"))
 asean_data <- merge(asean_data, new_pop_mid, by.x = c("country", "year"), by.y = c("country", "year") )
-new_asean_data <- mutate(asean_data, pop_density = -pop_density)
+asean_data$year <- as.numeric(asean_data$year)
+levels(asean_data$country)[levels(asean_data$country)=="Brunei Darussalam"] <- "Brunei"
+#new_asean_data <- mutate(asean_data, pop_density = -pop_density)
 #new_asean_data <- mutate(asean_data, pop_density = -((pop_density-mean(pop_density)) / sd(pop_density)))
-
+asean_data_2017 <- asean_data %>% filter(year == 2017)
 
 ##### TRANSPORT_STAT_BOOK #####
 transport_stat_src <- "1_Transport Statistics Malaysia 2018.pdf"
@@ -229,17 +231,8 @@ fatal_age <- fatal_age[-c(1,2,19),]
 fatal_age[,-c(1)] <- lapply(fatal_age[,-c(1)],function(x){as.numeric(gsub(",", "", x))})
 fatal_age[,c(1)] <- gsub("\\.", "", fatal_age[,1])
 colnames(fatal_age)[1] <- "Age"
-# fatal_age (transformed)
-fatal_age.T <- t(fatal_age)
-fatal_age.T <- data.frame(fatal_age.T)
-headers <- fatal_age$Age
-colnames(fatal_age.T) <- headers
-fatal_age.T$year <- rownames(fatal_age.T)
-fatal_age.T <- fatal_age.T[-c(1),]
-rownames(fatal_age.T) <- NULL
-fatal_age <- copy(fatal_age.T)
-fatal_age <- gather(fatal_age, age_category, fatality_count, -c("year"))
-fatal_age[,c(1,3)] <- lapply(fatal_age[,c(1,3)],function(x){as.numeric(gsub(",", "", x))})
+fatal_age <- gather(fatal_age, year, fatality_count, -c("Age"))
+fatal_age$Age <- as.factor(fatal_age$Age)
 
 ## Data Transformation----
 
@@ -249,7 +242,11 @@ fatal_users$vehicle_category <- as.factor(fatal_users$vehicle_category)
 levels(accident_users$vehicle_category)[levels(accident_users$vehicle_category)=="Motocar"] <- "Car"
 levels(accident_users$vehicle_category)[levels(accident_users$vehicle_category)=="Four Wheel Drive"] <- "4WD"
 accident_data <- merge(accident_users, fatal_users, by.x = c("year", "vehicle_category"), by.y = c("year", "vehicle_category"))
-
+accident_data <- accident_data %>%
+  mutate(text1 = paste0("x: ", year, "\n", "y: ", vehicle_category, "\n", "Value: ", accident_count)) %>%
+  mutate(text2 = paste0("x: ", year, "\n", "y: ", vehicle_category, "\n", "Value: ", fatality_count))
+  
+  
 #### WEB_SOURCES ####
 # asean_info
 url <- 'https://en.wikipedia.org/wiki/Southeast_Asia'
@@ -266,3 +263,20 @@ asean_info[5,8] <- "Kuala Lumpur"
 asean_info[,2:6] <- lapply(asean_info[,2:6],function(x){as.numeric(gsub(",", "", x))})
 country_code <- c("BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN")
 asean_info$id <- country_code
+# extract total_vehicle (per 1000 population) from total_vehicle (2017)
+asean_vehicle <- total_vehicle[,c("country", "2017")]
+asean_vehicle$country[asean_vehicle$country == "Brunei Darussalam"] <- "Brunei"
+asean_vehicle$country[asean_vehicle$country == "Viet Nam"] <- "Vietnam"
+asean_vehicle$country[asean_vehicle$country == "Lao PDR"] <- "Laos"
+names(asean_vehicle)[1] <- "Country"
+asean_info <- merge(asean_info, asean_vehicle, by.x = c("Country"), by.y = ("Country"))
+colnames(asean_info)[10] <- "Total_vehicle_2017"
+
+
+
+
+
+
+
+
+
