@@ -13,3 +13,16 @@
 2. Link to *GitHub repository* [https://github.com/norzarifah/WQD7001-group-project/] 
 3. Link to **RPubs** [http://rpubs.com/WQD190016/MyRoSe]
 
+**Souce Code**
+1. accident_data.csv
+2. asean_data_2017.csv
+3. fatal_age.csv
+4. state_data.csv
+5. subregion_South-Eastern_Asia_subunits.json
+
+**Code Shiny**: App.R
+
+**Code Slidify for Presentation**: Run file Index.Rmd
+
+
+
