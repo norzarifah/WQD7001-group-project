@@ -1,0 +1,58 @@
+---
+title       : Malaysian Road Safety Analysis (MyRoSe)</br>
+subtitle    : A Presentation for WQD7001 Principles of Data Science
+author      : By Farah Norliyana Azahar | Leong Mei June | Nur Amira Mansor | Norzarifah Kamarauzaman
+
+frameworks  : revealjs
+theme       : sky
+mode        : selfcontained # {standalone, draft}
+output: revealjs::revealjs_presentation
+      
+editor_options: 
+  chunk_output_type: console
+
+
+--- 
+
+#### Adoption of Data Science Process in Project Delivery
+
+><font size="5">1. Research understanding: we wanted to align our project on issues close to the heart of Malaysians i.e. Road Safety. Infamously, Malaysia has the third highest fatality rate from road accidents in Asia and second in Asean region.</font><br />
+><font size="5">2. Data requirement and data gathering: various resources and materials related to the issues are available online. These include annual statistical books and open government databases (e.g. data.gov.my and ASEANStatsDataPortal)</font><br />
+<font size="5">3. Data Cleaning: following data extraction, we performed data cleaning using various packages in R (e.g. plyr, tidyr, etc.). The data were transformed into more decipherable and structured form for visualisation.</font><br />
+<font size="5">4. Exploratory Data Analysis: there has been several attempts made to fit the data into different kinds of graphs and charts. We have brainstormed to pick which type of graph would best convey the insights.</font><br />
+
+
+
+--- 
+
+### Research Problems and Question
+
+> Research problems
+
++	<font size="5">There are too many fatal accidents happening recently which is very unbecoming of Malaysian drivers; especially those contributed from road rage accidents.</font>
++	<font size="5">Drivers in Malaysia are not aware of the road safety statistics in Malaysia that they don't pay attention to when driving through dangerous and hazardous roads.</font>
+
+> Research questions
+
++	<font size="5">How is the trend like with road accidents in Malaysia? Has it increased or decreased over the years?</font>
++	<font size="5">What has become the significant contributor to road accidents that happen in Malaysia?</font>
++ <font size="5">What is the fatality rate from road traffic accidents of Malaysia in comparison to other countries in Asean region?</font>
+
+---
+
+### Summary of Experience & Lesson Learnt
+> ![](http://www.brickshelf.com/gallery/IndianaJones/mybioniclestuff/carcrash.gif)<br />
+><font size="5">1. Collaborated together to generate ideas and ironed out differences by regularly catching up.</font><br />
+<font size="5">2. We think the local authority can do more for improving road safety in Malaysia, hence we came out with our suggestions for Road Safety, which is the focus of our project.</font><br />
+<font size="5">3. We troubleshooted and struggled with publishing our Shiny dashboard to RPubs. We are thankful for the help from other group members.</font><br />
+
+
+
+---
+### Source of Data and Product
+
+> <font size="5">Data Source: Mentioned in MyRoSe shinyapps.io </font><br />
+> ![](https://thumbs.dreamstime.com/b/products-colorful-stuck-stripes-text-alphabets-written-over-background-79309192.jpg)<br />
+><font size="6">To view the Product in shinyapps.io Click <a href="https://norzarifah.shinyapps.io/wqd7001_myrose/">this link</a></font><br />
+><font size="6">To view the Rcode in GitHub, Click <a href="https://github.com/norzarifah/WQD7001-group-project">this link</a></font>
+
