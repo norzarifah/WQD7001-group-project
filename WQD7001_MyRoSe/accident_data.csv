@@ -1,0 +1,401 @@
+"","year","vehicle_category","accident_count","fatality_count","text1","text2"
+"1",2009,"4WD",23581,78,"x: 2009
+y: 4WD
+Value: 23581","x: 2009
+y: 4WD
+Value: 78"
+"2",2009,"Bicycle",2486,224,"x: 2009
+y: Bicycle
+Value: 2486","x: 2009
+y: Bicycle
+Value: 224"
+"3",2009,"Bus",9380,31,"x: 2009
+y: Bus
+Value: 9380","x: 2009
+y: Bus
+Value: 31"
+"4",2009,"Car",472307,1405,"x: 2009
+y: Car
+Value: 472307","x: 2009
+y: Car
+Value: 1405"
+"5",2009,"Lorry",46724,213,"x: 2009
+y: Lorry
+Value: 46724","x: 2009
+y: Lorry
+Value: 213"
+"6",2009,"Motorcycle",113962,4067,"x: 2009
+y: Motorcycle
+Value: 113962","x: 2009
+y: Motorcycle
+Value: 4067"
+"7",2009,"Others",17963,636,"x: 2009
+y: Others
+Value: 17963","x: 2009
+y: Others
+Value: 636"
+"8",2009,"Van",19220,91,"x: 2009
+y: Van
+Value: 19220","x: 2009
+y: Van
+Value: 91"
+"9",2010,"4WD",25777,154,"x: 2010
+y: 4WD
+Value: 25777","x: 2010
+y: 4WD
+Value: 154"
+"10",2010,"Bicycle",2178,192,"x: 2010
+y: Bicycle
+Value: 2178","x: 2010
+y: Bicycle
+Value: 192"
+"11",2010,"Bus",9580,77,"x: 2010
+y: Bus
+Value: 9580","x: 2010
+y: Bus
+Value: 77"
+"12",2010,"Car",511861,1421,"x: 2010
+y: Car
+Value: 511861","x: 2010
+y: Car
+Value: 1421"
+"13",2010,"Lorry",50438,202,"x: 2010
+y: Lorry
+Value: 50438","x: 2010
+y: Lorry
+Value: 202"
+"14",2010,"Motorcycle",120156,4036,"x: 2010
+y: Motorcycle
+Value: 120156","x: 2010
+y: Motorcycle
+Value: 4036"
+"15",2010,"Others",21655,693,"x: 2010
+y: Others
+Value: 21655","x: 2010
+y: Others
+Value: 693"
+"16",2010,"Van",18788,97,"x: 2010
+y: Van
+Value: 18788","x: 2010
+y: Van
+Value: 97"
+"17",2011,"4WD",30828,151,"x: 2011
+y: 4WD
+Value: 30828","x: 2011
+y: 4WD
+Value: 151"
+"18",2011,"Bicycle",2033,172,"x: 2011
+y: Bicycle
+Value: 2033","x: 2011
+y: Bicycle
+Value: 172"
+"19",2011,"Bus",9986,29,"x: 2011
+y: Bus
+Value: 9986","x: 2011
+y: Bus
+Value: 29"
+"20",2011,"Car",546702,1389,"x: 2011
+y: Car
+Value: 546702","x: 2011
+y: Car
+Value: 1389"
+"21",2011,"Lorry",53078,247,"x: 2011
+y: Lorry
+Value: 53078","x: 2011
+y: Lorry
+Value: 247"
+"22",2011,"Motorcycle",129017,4169,"x: 2011
+y: Motorcycle
+Value: 129017","x: 2011
+y: Motorcycle
+Value: 4169"
+"23",2011,"Others",27591,627,"x: 2011
+y: Others
+Value: 27591","x: 2011
+y: Others
+Value: 627"
+"24",2011,"Van",17916,93,"x: 2011
+y: Van
+Value: 17916","x: 2011
+y: Van
+Value: 93"
+"25",2012,"4WD",32891,159,"x: 2012
+y: 4WD
+Value: 32891","x: 2012
+y: 4WD
+Value: 159"
+"26",2012,"Bicycle",1310,156,"x: 2012
+y: Bicycle
+Value: 1310","x: 2012
+y: Bicycle
+Value: 156"
+"27",2012,"Bus",10617,32,"x: 2012
+y: Bus
+Value: 10617","x: 2012
+y: Bus
+Value: 32"
+"28",2012,"Car",655813,1435,"x: 2012
+y: Car
+Value: 655813","x: 2012
+y: Car
+Value: 1435"
+"29",2012,"Lorry",42158,194,"x: 2012
+y: Lorry
+Value: 42158","x: 2012
+y: Lorry
+Value: 194"
+"30",2012,"Motorcycle",130080,4178,"x: 2012
+y: Motorcycle
+Value: 130080","x: 2012
+y: Motorcycle
+Value: 4178"
+"31",2012,"Others",33220,677,"x: 2012
+y: Others
+Value: 33220","x: 2012
+y: Others
+Value: 677"
+"32",2012,"Van",15143,86,"x: 2012
+y: Van
+Value: 15143","x: 2012
+y: Van
+Value: 86"
+"33",2013,"4WD",52512,158,"x: 2013
+y: 4WD
+Value: 52512","x: 2013
+y: 4WD
+Value: 158"
+"34",2013,"Bicycle",1370,159,"x: 2013
+y: Bicycle
+Value: 1370","x: 2013
+y: Bicycle
+Value: 159"
+"35",2013,"Bus",10123,60,"x: 2013
+y: Bus
+Value: 10123","x: 2013
+y: Bus
+Value: 60"
+"36",2013,"Car",632602,1399,"x: 2013
+y: Car
+Value: 632602","x: 2013
+y: Car
+Value: 1399"
+"37",2013,"Lorry",39276,210,"x: 2013
+y: Lorry
+Value: 39276","x: 2013
+y: Lorry
+Value: 210"
+"38",2013,"Motorcycle",121700,4294,"x: 2013
+y: Motorcycle
+Value: 121700","x: 2013
+y: Motorcycle
+Value: 4294"
+"39",2013,"Others",27092,555,"x: 2013
+y: Others
+Value: 27092","x: 2013
+y: Others
+Value: 555"
+"40",2013,"Van",17148,80,"x: 2013
+y: Van
+Value: 17148","x: 2013
+y: Van
+Value: 80"
+"41",2014,"4WD",41464,129,"x: 2014
+y: 4WD
+Value: 41464","x: 2014
+y: 4WD
+Value: 129"
+"42",2014,"Bicycle",1275,124,"x: 2014
+y: Bicycle
+Value: 1275","x: 2014
+y: Bicycle
+Value: 124"
+"43",2014,"Bus",9193,29,"x: 2014
+y: Bus
+Value: 9193","x: 2014
+y: Bus
+Value: 29"
+"44",2014,"Car",617578,1258,"x: 2014
+y: Car
+Value: 617578","x: 2014
+y: Car
+Value: 1258"
+"45",2014,"Lorry",37481,221,"x: 2014
+y: Lorry
+Value: 37481","x: 2014
+y: Lorry
+Value: 221"
+"46",2014,"Motorcycle",125712,4179,"x: 2014
+y: Motorcycle
+Value: 125712","x: 2014
+y: Motorcycle
+Value: 4179"
+"47",2014,"Others",38599,661,"x: 2014
+y: Others
+Value: 38599","x: 2014
+y: Others
+Value: 661"
+"48",2014,"Van",15041,73,"x: 2014
+y: Van
+Value: 15041","x: 2014
+y: Van
+Value: 73"
+"49",2015,"4WD",46163,130,"x: 2015
+y: 4WD
+Value: 46163","x: 2015
+y: 4WD
+Value: 130"
+"50",2015,"Bicycle",1119,107,"x: 2015
+y: Bicycle
+Value: 1119","x: 2015
+y: Bicycle
+Value: 107"
+"51",2015,"Bus",8804,20,"x: 2015
+y: Bus
+Value: 8804","x: 2015
+y: Bus
+Value: 20"
+"52",2015,"Car",625758,1358,"x: 2015
+y: Car
+Value: 625758","x: 2015
+y: Car
+Value: 1358"
+"53",2015,"Lorry",34942,223,"x: 2015
+y: Lorry
+Value: 34942","x: 2015
+y: Lorry
+Value: 223"
+"54",2015,"Motorcycle",123408,4203,"x: 2015
+y: Motorcycle
+Value: 123408","x: 2015
+y: Motorcycle
+Value: 4203"
+"55",2015,"Others",39515,594,"x: 2015
+y: Others
+Value: 39515","x: 2015
+y: Others
+Value: 594"
+"56",2015,"Van",14565,71,"x: 2015
+y: Van
+Value: 14565","x: 2015
+y: Van
+Value: 71"
+"57",2016,"4WD",48907,142,"x: 2016
+y: 4WD
+Value: 48907","x: 2016
+y: 4WD
+Value: 142"
+"58",2016,"Bicycle",1318,123,"x: 2016
+y: Bicycle
+Value: 1318","x: 2016
+y: Bicycle
+Value: 123"
+"59",2016,"Bus",9462,29,"x: 2016
+y: Bus
+Value: 9462","x: 2016
+y: Bus
+Value: 29"
+"60",2016,"Car",670935,1489,"x: 2016
+y: Car
+Value: 670935","x: 2016
+y: Car
+Value: 1489"
+"61",2016,"Lorry",35064,186,"x: 2016
+y: Lorry
+Value: 35064","x: 2016
+y: Lorry
+Value: 186"
+"62",2016,"Motorcycle",135181,4485,"x: 2016
+y: Motorcycle
+Value: 135181","x: 2016
+y: Motorcycle
+Value: 4485"
+"63",2016,"Others",45232,633,"x: 2016
+y: Others
+Value: 45232","x: 2016
+y: Others
+Value: 633"
+"64",2016,"Van",14470,65,"x: 2016
+y: Van
+Value: 14470","x: 2016
+y: Van
+Value: 65"
+"65",2017,"4WD",44297,113,"x: 2017
+y: 4WD
+Value: 44297","x: 2017
+y: 4WD
+Value: 113"
+"66",2017,"Bicycle",787,162,"x: 2017
+y: Bicycle
+Value: 787","x: 2017
+y: Bicycle
+Value: 162"
+"67",2017,"Bus",7258,23,"x: 2017
+y: Bus
+Value: 7258","x: 2017
+y: Bus
+Value: 23"
+"68",2017,"Car",564491,1269,"x: 2017
+y: Car
+Value: 564491","x: 2017
+y: Car
+Value: 1269"
+"69",2017,"Lorry",34747,199,"x: 2017
+y: Lorry
+Value: 34747","x: 2017
+y: Lorry
+Value: 199"
+"70",2017,"Motorcycle",108221,4348,"x: 2017
+y: Motorcycle
+Value: 108221","x: 2017
+y: Motorcycle
+Value: 4348"
+"71",2017,"Others",29375,564,"x: 2017
+y: Others
+Value: 29375","x: 2017
+y: Others
+Value: 564"
+"72",2017,"Van",13347,62,"x: 2017
+y: Van
+Value: 13347","x: 2017
+y: Van
+Value: 62"
+"73",2018,"4WD",45757,88,"x: 2018
+y: 4WD
+Value: 45757","x: 2018
+y: 4WD
+Value: 88"
+"74",2018,"Bicycle",727,122,"x: 2018
+y: Bicycle
+Value: 727","x: 2018
+y: Bicycle
+Value: 122"
+"75",2018,"Bus",7328,39,"x: 2018
+y: Bus
+Value: 7328","x: 2018
+y: Bus
+Value: 39"
+"76",2018,"Car",591399,1167,"x: 2018
+y: Car
+Value: 591399","x: 2018
+y: Car
+Value: 1167"
+"77",2018,"Lorry",36915,192,"x: 2018
+y: Lorry
+Value: 36915","x: 2018
+y: Lorry
+Value: 192"
+"78",2018,"Motorcycle",113288,4128,"x: 2018
+y: Motorcycle
+Value: 113288","x: 2018
+y: Motorcycle
+Value: 4128"
+"79",2018,"Others",25055,501,"x: 2018
+y: Others
+Value: 25055","x: 2018
+y: Others
+Value: 501"
+"80",2018,"Van",17226,47,"x: 2018
+y: Van
+Value: 17226","x: 2018
+y: Van
+Value: 47"
