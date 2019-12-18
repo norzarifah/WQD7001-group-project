@@ -11,5 +11,5 @@
 **Products:**
 1. Link to the application on *shinyapps.io* [https://norzarifah.shinyapps.io/wqd7001_myrose/]
 2. Link to *GitHub repository* [https://github.com/norzarifah/WQD7001-group-project/] 
-3. Link to **RPubs** [insert link-here]
+3. Link to **RPubs** [http://rpubs.com/WQD190016/MyRoSe]
 
