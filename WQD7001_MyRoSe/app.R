@@ -14,6 +14,8 @@ asean_data_2017 <- read.csv("asean_data_2017.csv", header=TRUE, sep=",")
 fatal_age <- read.csv("fatal_age.csv", header=TRUE, sep=",")
 accident_data <- read.csv("accident_data.csv", header=TRUE, sep=",")
 state_data <- read.csv("state_data.csv", header=TRUE, sep=",")
+Rss <- base64enc::dataURI(file="Rss.png", mime="image/png")
+Ulp <- base64enc::dataURI(file="Ulp.png", mime="image/png")
 
 ui <- dashboardPage(
     dashboardHeader(title = span("MyRoSe", style = "font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 150%;")),
@@ -35,9 +37,9 @@ ui <- dashboardPage(
                                    background = "maroon",
                                    tags$p("MyRoSe (MalaYsia ROad Safety Eye) aims to provide insights and revelation on the road safety situation in Malaysia. The information provided herein are based on data collected from the following resources: ",
                                           style = "font-size: 120%;"),
-                                   tags$li("ASEAN Statistical Yearbook 2018", style = " font-size: 16px;"),
-                                   tags$li("Malaysia Transport Statistics Book 2018",  style = " font-size: 16px;"),
-                                   tags$li("Buku Statistik Keselamatan Jalan Raya",  style = " font-size: 16px;"),
+                                   tags$li("ASEAN Statistical Yearbook 2018", style = " font-size: 14px;"),
+                                   tags$li("Malaysia Transport Statistics Book 2018",  style = " font-size: 14px;"),
+                                   tags$li("Buku Statistik Keselamatan Jalan Raya",  style = " font-size: 14px;"),
                                    align = "justify"),
                                valueBox(value = tags$p("MYS @ 3rd", style = "font-size: 130%;"),
                                         subtitle = tags$p("Road Traffic Deaths Globally", style = "font-size: 130%;"),
@@ -159,8 +161,8 @@ ui <- dashboardPage(
                     )
             ),
             
-            tabItem(tabName = "RSS", img(src="Rss.png"),img(src="Ulp.png"))
-            )
+            tabItem(tabName = "RSS",img(src=Rss), img(src=Ulp))
+        )
     )
 )
 
@@ -190,4 +192,6 @@ server <- function(input, output) {
 
 #### app.R ####
 shinyApp(ui = ui, server = server)
+
+
 
